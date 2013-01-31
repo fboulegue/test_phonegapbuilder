@@ -1,0 +1,119 @@
+<html>
+    
+    <head>
+        <link href="../../fuctions/style.css" rel="stylesheet" media="screen"
+        type="text/css" />
+        <script type="text/javascript" charset="utf-8" src="../../fuctions/cordova-2.3.0.js"></script>
+        <script type="text/javascript" charset="utf-8" src="../../fuctions/functions.js"></script>
+        <script type="text/javascript" charset="utf-8" src="../../fuctions/functions2.js"></script>
+        <script type="text/javascript" charset="utf-8" src="../../fuctions/jq.js"></script>
+        <script>
+            //need for function.js
+            //make checked <li> item green after checked -> uncheck red and remove checkmark
+            
+            $(document).ready(function() {
+                              activateStateToggle();
+                              });
+            </script>
+        
+    </head>
+    <body>
+        <div id="topbar">
+            <div id="title">
+                Before Engine Startin
+            </div>  
+            <div id="leftnav">
+                <a href="../../index_aerosoft.html">Home</a>
+                <a href="katana_checklist_all.html">Overview</a>
+            </div>
+            <div id="rightnav">
+                <a href="katan_checklist_startingengine.html"id="a_next">Next</a>
+            </div>
+        </div>
+        <div id="content">
+            <ul class="pageitem">
+                <li class="radiobutton" onClick="checkChanges()">
+                    <span class="name">Preflight Inspection -<font color="red"> performed</font></span>
+                    <input name="1" type="radio" value="other" />
+                </li>
+                <li class="radiobutton" onClick="checkChanges()">
+                    <span class="name">Pedals -<font color="red"> adjust, lock</font></span>
+                    <input name="2" type="radio" value="other" />
+                </li>
+                <li class="radiobutton" onClick="checkChanges()">
+                    <span class="name">Passenger Briefing -<font color="red"> performed</font></span>
+                    <input name="3" type="radio" value="other" />
+                </li>
+                <li class="radiobutton" onClick="checkChanges()">
+                    <span class="name">Safety Belt -<font color="red"> fasten</font></span>
+                    <input name="4" type="radio" value="other" />
+                </li>
+                <li class="radiobutton" onClick="checkChanges()">
+                    <span class="name">Parking Brake -<font color="red"> SET</font></span>
+                    <input name="5" type="radio" value="other" />
+                </li>
+                <li class="radiobutton" onClick="checkChanges()">
+                    <span class="name">Controls -<font color="red"> free</font></span>
+                    <input name="6" type="radio" value="other" />
+                </li>
+                <li class="radiobutton" onClick="checkChanges()">
+                    <span class="name">Fuel Shut-off Valve -<font color="red"> OPEN</font></span>
+                    <input name="7" type="radio" value="other" />
+                </li>
+                <li class="radiobutton" onClick="checkChanges()">
+                    <span class="name">Carburetor Heat -<font color="red"> pushed in, OFF</font></span>
+                    <input name="8" type="radio" value="other" />
+                </li>
+                <li class="radiobutton" onClick="checkChanges()">
+                    <span class="name">Throttle -<font color="red"> IDLE</font></span>
+                    <input name="9" type="radio" value="other" />
+                </li>
+                <li class="radiobutton" onClick="checkChanges()">
+                    <span class="name">Propeller Speed Control Lever -<font color="red"> max. RPM</font></span>
+                    <input name="10" type="radio" value="other" />
+                </li>
+                <li class="radiobutton" onClick="checkChanges()">
+                    <span class="name">Friction Device of Throttle Quadrant -<font color="red"> adjust</font></span>
+                    <input name="11" type="radio" value="other" />
+                </li>
+                <li class="radiobutton" onClick="checkChanges()">
+                    <span class="name">Avionics Master Switch -<font color="red"> OFF</font></span>
+                    <input name="12" type="radio" value="other" />
+                </li>
+                <li class="radiobutton" onClick="checkChanges()">
+                    <span class="name">Master Switch (Battery/Generator) -<font color="red"> ON</font></span>
+                    <input name="13" type="radio" value="other" />
+                </li>
+                <li class="radiobutton" onClick="checkChanges()">
+                    <span class="name">Generator Warning Light -<font color="red"> dlluminated</font></span>
+                    <input name="14" type="radio" value="other" />
+                </li>
+                <li class="radiobutton" onClick="checkChanges()">
+                    <span class="name">Fuel Pressur Warning Light -<font color="red"> illuminated</font></span>
+                    <input name="15" type="radio" value="other" />
+                </li>
+                <li class="radiobutton" onClick="checkChanges()">
+                    <span class="name">Exterior Lights -<font color="red"> as required</font></span>
+                    <input name="16" type="radio" value="other" />
+                </li>
+                <li class="radiobutton" onClick="checkChanges()">
+                    <span class="name">Instrument Panel Lighting -<font color="red"> as required</font></span>
+                    <input name="17" type="radio" value="other" />
+                </li>
+                <li class="radiobutton" onClick="checkChanges()">
+                    <span class="name">Canopy -<font color="red"> CLOSE / SECURE</font></span>
+                    <input name="18" type="radio" value="other" />
+                </li>
+                <li class="radiobutton" onClick="checkChanges()">
+                    <span class="name">Canopy Locking Warning Light -<font color="red"> OFF</font></span>
+                    <input name="19" type="radio" value="other" />
+                </li>
+            </ul>
+        </div>
+        <div id="footer">
+            <a class="noeffect" href="#" onClick="resetChecklist();">Reset Checklist</a><!--ResetChecklist-->
+            <br /><br />
+            <a class="noeffect" href="javascript:void(0);" onClick="openAerosoftDE();">Aerosoft</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <link href="fuctions/style.css" rel="stylesheet" media="screen" type="text/css" />
+        <script type="text/javascript" charset="utf-8" src="fuctions/cordova-2.3.0.js"></script>
+        <script type="text/javascript" charset="utf-8" src="fuctions/jq.js"></script>
+        <script type="text/javascript" charset="utf-8" src="fuctions/functions.js"></script>        
+
+        <script>
+            //OnLoad Check Internet Connection
+            //only needed in pages with internet connection
+            document.addEventListener("deviceready", onDeviceReady, false);
+            function onDeviceReady() {
+                checkInternet(); //function
+            };
+            jQuery(document).ready(function() {
+                                   loadNews('aeorosoft-news');                  //DAS IST FUNKTION
+                                   });
+        </script>
+    </head>
+    <body>
+        <div id="topbar">
+            <div id="title">
+                Aerosoft Checklist</div>
+            <div id="leftbutton">
+                <a href="javascript:void(0);" class="noeffect" onClick="openAerosoftDE();">Web</a>
+            </div>
+        </div>
+        <div id="tributton">
+            <div class="links">
+                <a href="index_aerosoft.html">Checklist</a><a id="pressed" href="news.html">News</a><a href="about.html">About</a>
+            </div>
+        </div>
+        <div id="content"><div id="notaircraft"></div>
+            <span class="graytitle"></span>
+           <div id="ajax-loader-news"></div>
+        </div>
+        <div id="footer">
+            <a href="javascript:void(0);" class="noeffect" onClick="openAerosoftDE();">Aerosoft</a>
+        </div>
+    </body>
+</html>
+
